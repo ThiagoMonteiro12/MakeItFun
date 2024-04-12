@@ -1,3 +1,9 @@
-.head{
-    font-family: ;
+@font-face {
+    font-family: 'Josefin sans';
+    src: url(Fontes/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+:root{
+
+    
 }
