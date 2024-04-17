@@ -3,7 +3,100 @@
     src: url(Fontes/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
 }
 
-:root{
+:root {
+    --branco-makeitfun: #E5D9B2;
+    --azul-makeitfun: #275670;
+    --laranja-makeitfun: #FE8F24;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--branco-makeitfun);
+}
+
+.container-grid {
+    width: 85vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+header div.container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    height: 140px;
+    background-color: var(--azul-makeitfun);
+}
+
+header img {
+    width: 125px;
+}
+
+.menu {
+    width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.menu a {
+    color: white;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1.5px;
+    font-size: 18px;
+    font-family: "Josefin sans";
+
+    transition: text-decoration 300ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: white;
+}
+.menu button{
+
+    background: none;
+    border: none;
+}
+
+.conteudo-banner img {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 0px 0px 40px 40px;
+}
+
+.novidades{
+    padding-top: 100px;
+    padding-bottom: 40px;
     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.novidades img{
+    height: 75%;
+    width: 80%;
+
+    display: flex;
+}
+.novidades button{
+
+    background: none;
+    border: none;
 }
