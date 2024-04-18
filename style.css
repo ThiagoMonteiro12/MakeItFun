@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'Josefin sans';
     src: url(Fontes/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+
+    font-family: 'Lato';
+    src: url(Fontes/Lato/Lato-Regular.ttf);
 }
 
 :root {
@@ -59,7 +62,7 @@ header img {
     text-decoration: underline transparent;
     text-decoration-thickness: 1.5px;
     font-size: 18px;
-    font-family: "Josefin sans";
+    font-family: "Lato";
 
     transition: text-decoration 300ms ease;
 }
@@ -100,3 +103,75 @@ header img {
     background: none;
     border: none;
 }
+#sobre {
+
+    background-color: var(--azul-makeitfun);
+
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#sobre h2{
+    font-size: 32px;
+    font-family: 'Lato' ;
+    color: var(--branco-makeitfun);
+}
+.empresa a{
+
+    font-family: 'Josefin sans';
+    font-size: 28px;
+}
+.historia{
+    font-size: 22px;
+    font-family: 'Josefin sans';
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.empresa{
+    height: 500px;
+    width: 650px;
+
+    background-color: #CDC5A1;
+}
+.fundadores{ 
+    height: 550px;
+    width: 700;
+    background-color: var(--laranja-makeitfun);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.fundadores img{ 
+    height: 225px;
+    width: 225px;
+
+}
+.Thiago{
+    align-self: flex-end;
+}
+
+#portfolio{
+
+
+}
+.anuncio{
+
+    height: 75px;
+    width: 600px;
+    
+    display: flex;
+    justify-items: end;
+
+    background-color: #333;
+
+    border-radius: 0px 10px 0px 10px;
+
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    font-size: 32px;
+    font-family: 'Lato';
+ }
