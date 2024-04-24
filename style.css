@@ -23,6 +23,9 @@ html {
 }
 
 body {
+    background-image: url(Imagem/pattern.png);
+    background-size: 200px;
+
     background-color: var(--branco-makeitfun);
 }
 
@@ -54,7 +57,7 @@ header img {
 
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
 
 .menu a {
@@ -70,7 +73,8 @@ header img {
 .menu a:hover {
     text-decoration-color: white;
 }
-.menu button{
+
+.menu button {
 
     background: none;
     border: none;
@@ -80,29 +84,36 @@ header img {
     height: 100%;
     width: 100%;
 
-    border-radius: 0px 0px 40px 40px;
 }
 
-.novidades{
+#noticias {
+    background-image: none;
+
+}
+
+.novidades {
     padding-top: 100px;
     padding-bottom: 40px;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
-.novidades img{
+
+.novidades img {
     height: 75%;
     width: 80%;
 
     display: flex;
 }
-.novidades button{
+
+.novidades button {
 
     background: none;
     border: none;
 }
+
 #sobre {
 
     background-color: var(--azul-makeitfun);
@@ -110,17 +121,26 @@ header img {
     padding-top: 20px;
     padding-bottom: 50px;
 }
-#sobre h2{
+
+#sobre h2 {
     font-size: 32px;
-    font-family: 'Lato' ;
+    font-family: 'Lato';
     color: var(--branco-makeitfun);
 }
-.empresa a{
+
+.empresa a {
 
     font-family: 'Josefin sans';
     font-size: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 10px;
 }
-.historia{
+
+.historia {
     font-size: 22px;
     font-family: 'Josefin sans';
 
@@ -128,13 +148,22 @@ header img {
     flex-direction: row;
     justify-content: space-between;
 }
-.empresa{
+.descricao{
+width: 40%;
+
+display: flex;
+flex-direction: row;
+justify-content: start;
+}
+
+.empresa {
     height: 500px;
     width: 650px;
 
     background-color: #CDC5A1;
 }
-.fundadores{ 
+
+.fundadores {
     height: 550px;
     width: 700;
     background-color: var(--laranja-makeitfun);
@@ -144,24 +173,27 @@ header img {
     justify-content: space-between;
     padding: 30px;
 }
-.fundadores img{ 
+
+.fundadores img {
     height: 225px;
     width: 225px;
 
 }
-.Thiago{
+
+.Thiago {
     align-self: flex-end;
 }
 
-#portfolio{
+#portfolio {
 
-padding-bottom:40px;
+    padding-bottom: 40px;
 }
-.anuncio{
+
+.anuncio {
 
     height: 75px;
     width: 600px;
-    
+
     display: flex;
     justify-content: center;
 
@@ -172,15 +204,19 @@ padding-bottom:40px;
 
     font-size: 32px;
     font-family: 'Lato';
- }
- .card{
+}
+.anuncio h2{
+    color: var(--branco-makeitfun);
+}
+
+.card {
 
     height: 180px;
     width: 100%;
 
     display: flex;
     justify-content: space-between;
-    
+
 
     background-color: var(--azul-makeitfun);
 
@@ -188,24 +224,26 @@ padding-bottom:40px;
     margin-top: 20px;
 
     border-radius: 4px;
- }
- 
- .card-texto{
+}
+
+.card-texto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 
     color: var(--branco-makeitfun);
 
     margin: 10px;
 
- }
- .card p{
+}
+
+.card p {
     font-family: 'Josefin sans';
     font-size: 22px;
- }
- .card a{
+}
+
+.card a {
     font-family: 'Josefin sans';
     font-size: 24px;
 
@@ -213,58 +251,92 @@ padding-bottom:40px;
     justify-content: end;
 
     margin-right: 0%;
- }
- .card{
+}
+
+.card {
 
     height: 180px;
     width: 100%;
 
     display: flex;
     justify-content: space-between;
-    
+
 
     background-color: var(--azul-makeitfun);
 
     margin-bottom: 20px;
     margin-top: 20px;
- }
+}
 
- #formulario {
+#formulario {
     text-align: center;
     padding-bottom: 100px;
-    margin-bottom: 100px;
-
-    background-image: url(Imagem/fundo.png);
-
-    background-size: 100%;
-
- }
- #formulario h2{
-    margin-bottom: 80px;
- }
- #formulario form{
-
-    width: 70%;
-
-    margin: 0 auto;
-    padding: 60px 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 
+
+    background-size: 100%;
+
+}
+
+
+#formulario h2 {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    font-family: 'Lato';
+    color: #333;
+
+    
+}
+
+#formulario form {
+    
+    width: 70%;
+    
+    margin: 0 auto;
+    padding: 60px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     border-radius: 40px;
     background-color: var(--azul-makeitfun);
-
+    
     color: var(--branco-makeitfun);
     font-family: 'Lato';
+    
+}
 
- }
-#formulario form label{
+#formulario form label {
     margin-bottom: 15px;
     font-size: 22px;
 }
-.campo{
+
+.titulo {
+    
+    height: 75px;
+    width: 500px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--laranja-makeitfun);
+    
+    font-size: 32px;
+    font-family: 'Lato';
+    border-radius: 20px;
+    
+    margin-bottom: 40px;
+}
+
+.campo {
     width: 60%;
 
     margin-bottom: 50px;
@@ -276,7 +348,8 @@ padding-bottom:40px;
     justify-content: space-between;
 
 }
-.campo input{
+
+.campo input {
     height: 40px;
 
     color: #333;
@@ -291,10 +364,13 @@ padding-bottom:40px;
     font-size: 22px;
 
 }
-.campo input:focus, .campo-textarea textarea:focus {
+
+.campo input:focus,
+.campo-textarea textarea:focus {
     outline: 2px solid var(--laranja-makeitfun);
 }
-.campo-textarea{
+
+.campo-textarea {
 
     width: 60%;
     margin-bottom: 30px;
@@ -305,7 +381,8 @@ padding-bottom:40px;
     justify-content: space-between;
 
 }
-.campo-textarea textarea{
+
+.campo-textarea textarea {
     color: var(--laranja-makeitfun);
     background-color: var(--branco-makeitfun);
 
@@ -314,16 +391,17 @@ padding-bottom:40px;
 
     padding: 10px;
 
-    font-family: 'Lato' ;
+    font-family: 'Lato';
     font-size: 22px;
 
     outline: none;
     resize: none;
 }
+
 #formulario form button {
 
     height: 40px;
-    width: 60px;
+    width: 120px;
 
     font-family: 'Lato';
     font-size: 22px;
@@ -340,4 +418,53 @@ padding-bottom:40px;
     text-transform: uppercase;
     transition: background-color 300ms ease;
 }
-#contato form button:hover{}
+
+#formulario form button:hover {
+
+    color: #B36319;
+}
+
+footer {
+    background-color: #827C64;
+    height: 300px;
+}
+
+footer .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.redes-sociais p {
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 24px;
+}
+
+.icones {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones a {
+    color: white;
+}
+
+.icones a:hover {
+    color: var(--azul-makeitfun);
+}
+
+footer img {
+    width: 300px;
+    height: 300px;
+}
