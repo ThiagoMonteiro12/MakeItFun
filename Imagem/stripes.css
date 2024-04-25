@@ -114,24 +114,20 @@ header img {
     border: none;
 }
 
-#sobre {  
-    background-color: var(--azul-makeitfun);
-    background-image: url(Imagem/stripes.png);
-    background-size: 100%;
-
-    height: 720px;
-    padding: auto;
-    background-repeat: unset;
+#sobre {
 
     
+    background-image: url(Imagem/stripes.png);
+    background-size: 1480px;
+
+    padding: auto;
+    background-repeat: unset;
 }
 
 #sobre h2 {
     font-size: 32px;
     font-family: 'Lato';
     color: white;
-
-    margin-top: 20px;
 }
 
 .empresa a {
@@ -161,6 +157,9 @@ header img {
 }
 
 .empresa {}
+
+.fundadores {
+}
 
 .fundadores img {
     height: 225px;
