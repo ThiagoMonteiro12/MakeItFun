@@ -114,69 +114,87 @@ header img {
     border: none;
 }
 
-#sobre {  
+#sobre {
+    
     background-color: var(--azul-makeitfun);
-    background-image: url(Imagem/stripes.png);
-    background-size: 100%;
 
-    height: 720px;
-    padding: auto;
-    background-repeat: unset;
+    padding-top: 20px;
+    padding-bottom: 50px;
 
     
 }
-
-#sobre h2 {
+#sobre h2{
     font-size: 32px;
-    font-family: 'Lato';
+    font-family: 'Lato' ;
     color: white;
-
-    margin-top: 20px;
 }
-
-.empresa a {
+.empresa a{
 
     font-family: 'Josefin sans';
     font-size: 28px;
+    text-align: center;
 
-    padding: 25px;
-
+    padding: 20px;
 }
-
-.historia {
+.historia{
     font-size: 22px;
     font-family: 'Josefin sans';
 
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 20px;
+}
+.empresa{
+    height: 60%;
+    width: 100%;
+    padding: 20px;
+
+    background-color: #CDC5A1;
+}
+.fundadores{ 
+    width: 400px;
+    height: 280px;
+
+
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+
+
 }
-
-.descricao {
-    width: 65%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+.fundadores p{
+    margin-left: 20px;
+    margin-right: 50px;
+    font-size: 28px;
+    font-family: 'Lato';
+    
 }
-
-.empresa {}
-
-.fundadores img {
+.fundadores img{ 
     height: 225px;
     width: 225px;
+    
+    border-radius: 145px;
 
+    display: flex;
+    flex-direction: column;
 }
-
-.Thiago {
+.Thiago{
+    margin-top: 20px;
     align-self: flex-end;
 }
 
-#portfolio {
+#portfolio{
 
-    padding-bottom: 80px;
 }
-
 .container-trabalhos {
     padding-top: 100px;
 }
@@ -184,9 +202,9 @@ header img {
 .anuncio {
 
     height: 75px;
-    width: 600px;
+    width: 60%;
 
-    border-radius: 0px 18px 18px 0px;
+    border-radius: 0px 14px 14px 0px;
 
     display: flex;
     justify-content: center;
@@ -259,6 +277,30 @@ header img {
 
     text-align: center;
 
+}
+#jogo{
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.bannerJ{
+    display: flex;
+    justify-content: center;
+
+}
+.bannerJ img{
+    height: 60%;
+    width: 60%;
+
+    transition: 200ms ease;
+}
+.bannerJ img:hover{
+
+    height: 70%;
+    width: 70%;
+
+    
 }
 
 #formulario {
@@ -460,4 +502,7 @@ footer .container-grid {
 footer img {
     width: 200px;
     height: 200px;
+}
+@media screen and (max-width: 1300px) {
+    
 }
