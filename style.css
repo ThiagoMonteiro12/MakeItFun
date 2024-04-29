@@ -47,7 +47,9 @@ header {
     height: 140px;
     background-color: var(--azul-makeitfun);
 }
-
+header button{
+    display: none;
+}
 header img {
     width: 125px;
 }
@@ -421,7 +423,6 @@ header img {
 }
 
 .campo-textarea textarea {
-    color: var(--laranja-makeitfun);
     background-color: white;
 
     border: none;
@@ -550,4 +551,20 @@ footer img {
         font-size: 32px;
     }
     
+}
+@media screen and(max-width: 400) {
+    .conteudo-banner img{
+
+        height: 80%;
+    }
+    .form{
+        width: 80%;
+    }
+    .campo input {
+        width: 80%;
+        height: 60px;
+    }
+    .campo-textarea{
+        width: 80%;
+    }
 }
