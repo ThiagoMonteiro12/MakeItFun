@@ -550,6 +550,9 @@ footer img {
     .card p{
         font-size: 32px;
     }
+    .anuncio{
+        width: 70%;
+    }
     
 }
 @media screen and(max-width: 400) {
