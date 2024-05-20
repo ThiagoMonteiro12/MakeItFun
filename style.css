@@ -507,6 +507,12 @@ footer img {
     width: 200px;
     height: 200px;
 }
+.menu-fechado{
+    display: none;
+}
+#icone-barras {
+    display: none;
+}
 @media screen and (max-width: 1080px) {
     header button {
         width: 50px;
